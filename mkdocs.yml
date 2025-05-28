@@ -1,1 +1,135 @@
-site_name: My Docs
+site_name: Offensive Tooling Foundations - Labs
+site_description: 'Lab Walkthroughs'
+site_author: 'Chris Traynor'
+copyright: Copyright &copy; 2025 Ridgeback Information Security, LLC
+repo_url: https://github.com/ridgebackinfosec/OTF-labs
+repo_name: OTF-labs
+# site_url: 
+extra:
+  # version: v1.0
+  homepage: https://ridgebackinfosec.com
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ridgebackinfosec
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/RidgebackSec
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ridgeback-infosec
+
+plugins:
+  - search
+  - glightbox
+  - offline:
+      enabled: true # https://squidfunk.github.io/mkdocs-material/plugins/offline/
+
+nav:
+  - Home: index.md
+  - Lab - VM Setup: labs/vm_setup/index.md
+  - Lab - Recon-NG: labs/recon-ng/index.md
+  - Lab - Gobuster: labs/gobuster/index.md
+  - Lab - Exiftool: labs/exiftool/index.md
+  - Lab - Nmap: labs/nmap/index.md
+  - Lab - EyeWitness: labs/eyewitness/index.md
+  - Lab - Parsuite: labs/parsuite/index.md
+  - Lab - Metasploit: labs/metasploit/index.md
+  - Lab - John The Ripper: labs/john_the_ripper/index.md
+  
+theme:
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - search.suggest
+    - search.highlight
+    # - navigation.footer
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    # - navigation.tabs
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - sane_lists
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - toc:
+      permalink: false
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.blocks.admonition:
+      # types:
+      #   - abstract
+      #   - attention
+      #   - bug
+      #   - caution
+      #   - cmd
+      #   - danger
+      #   - error
+      #   - example
+      #   - failure
+      #   - hint
+      #   - info
+      #   - note
+      #   - new
+      #   - question
+      #   - quote
+      #   - settings
+      #   - success
+      #   - tip
+      #   - warning
+  - pymdownx.blocks.details:
+      #types:
+      #  - name: details-quote
+      #    class: quote
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
