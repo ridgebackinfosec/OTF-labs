@@ -1,7 +1,5 @@
 # Lab - Gobuster
 
-[ITOT Labs](https://www.notion.so/ITOT-Labs-129f544cc4c846f79af088eaafe62611?pvs=21)
-
 !!! tip "Lab Setup"
     Log in to The Forge VM.
 
@@ -25,7 +23,7 @@ gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101
 
 ![Directory Enumeration](./img/Untitled.png){ width="70%" }
 /// caption
-
+Directory Enumeration
 ///
 Directory Enumeration
 
@@ -43,7 +41,7 @@ gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101
 
 ![File Enumeration](./img/Untitled%201.png){ width="70%" }
 /// caption
-
+File Enumeration
 ///
 File Enumeration
 
@@ -63,7 +61,7 @@ cat gobuster_files_enum.txt
 
 ![Gobuster Results](./img/Untitled%202.png){ width="70%" }
 /// caption
-
+Gobuster Results
 ///
 Gobuster Results
 
