@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# Welcome to Offensive Tooling Foundations
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Waiting is hard
 
-## Commands
+If you're looking for something to fill the time before class, here are some webcasts I've done on the BHIS YouTube channel.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The Illustrated Pentester - Short (True) Stories of Security
 
-## Project layout
+* Vol. 1 - https://www.youtube.com/watch?v=4v2lBK21sfs 
+* Vol. 2 - https://www.youtube.com/watch?v=MASebPO6eHo
+* Vol. 3 - https://www.youtube.com/watch?v=ir0R5GjrH5s
+* Vol. 4 - https://www.youtube.com/watch?v=wwygi5fBeUU
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+See y'all at the start of class!
