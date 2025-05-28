@@ -25,7 +25,6 @@ ll
 /// caption
 Directory Contents
 ///
-Directory Contents
 
 Let’s look at the PDF file by opening it with the below command.
 
@@ -45,7 +44,6 @@ The command `exiftool tragedy.pdf` is displaying all the metadata information fo
 /// caption
 Metadata
 ///
-Metadata
 
 ```bash
 exiftool -Description="I am the Senate" tragedy.pdf
@@ -57,7 +55,6 @@ This command would modify the Description metadata field of the "tragedy.pdf" fi
 /// caption
 File Updated
 ///
-File Updated
 
 Let’s look at our changes with the below command.
 
@@ -69,7 +66,6 @@ exiftool tragedy.pdf
 /// caption
 Updated Metadata
 ///
-Updated Metadata
 
 ## Challenge
 

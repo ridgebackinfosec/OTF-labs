@@ -25,7 +25,6 @@ gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101
 /// caption
 Directory Enumeration
 ///
-Directory Enumeration
 
 The `-a` option is used to specify a user agent string, which is a piece of information that tells the server what web browser is being used to make the request. In this case, the user agent string is `"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0"`, which is pretending to be Firefox running on a Windows 8.1 computer.
 
@@ -43,7 +42,6 @@ gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101
 /// caption
 File Enumeration
 ///
-File Enumeration
 
 The second command is similar to the first one, but instead of enumerating directories, it is enumerating files. The `-w` option is pointing to a different wordlist of potential files (`raft-medium-files.txt`), and the -o option is specifying a different output file (`gobuster_files_enum.txt`). This command would scan the specified target URL for any files that match the entries in the wordlist and output the results to the specified file.
 
@@ -63,7 +61,6 @@ cat gobuster_files_enum.txt
 /// caption
 Gobuster Results
 ///
-Gobuster Results
 
 Try navigating to each of those directories and files in your Forge VM’s Firefox browser. What do you see?
 

@@ -36,7 +36,6 @@ Looks like FTP and SSH are open.
 /// caption
 FTP & SSH
 ///
-FTP & SSH
 
 HTTP (web service) are also accessible.
 
@@ -44,7 +43,6 @@ HTTP (web service) are also accessible.
 /// caption
 HTTP
 ///
-HTTP
 
 A database and IRC also appear to be running on the target.
 
@@ -52,6 +50,5 @@ A database and IRC also appear to be running on the target.
 /// caption
 MySQL & IRC
 ///
-MySQL & IRC
 
 Note how most of these open services have NSE script results displayed with them. Giving you (the attacker) additional information that could be used in later phases of our attack and helps determine where to spend our time.

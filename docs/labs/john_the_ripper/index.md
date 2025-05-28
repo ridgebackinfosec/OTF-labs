@@ -22,7 +22,6 @@ sudo unshadow /etc/passwd /etc/shadow > ~/hashes.txt
 /// caption
 Unshadow Command
 ///
-Unshadow Command
 
 Our next command tests John the Ripper's ability to recognize the crypt hash format and benchmark the capability our your VM.
 
@@ -36,7 +35,6 @@ sudo john --test --format=crypt
 /// caption
 Benchmarking
 ///
-Benchmarking
 
 The `c/s` number represents the approximate password crack attempts per second.
 
@@ -57,7 +55,6 @@ Let’s see if you’re successful in cracking those passwords…
 /// caption
 Password Cracking
 ///
-Password Cracking
 
 One of the most powerful features of John the Ripper is that it will remember all the passwords it has cracked and their related hashes. The below command will show the cracked passwords for the hashes stored in the `hashes.txt` file. If any of the passwords have been successfully cracked by John the Ripper, they will be displayed in the terminal.
 
@@ -69,7 +66,6 @@ sudo john --show ~/ITOT_Lab_Files/johntheripper/hashes.txt
 /// caption
 Cracked Hashes
 ///
-Cracked Hashes
 
 This helps save time when using the same instance of john to crack hashes from many sources. As it won’t attempt to crack passwords it has already successfully done before.
 
@@ -90,7 +86,6 @@ locate .pot
 /// caption
 Locate Command
 ///
-Locate Command
 
 There it is!
 
@@ -104,7 +99,6 @@ sudo cat /root/.john/john.pot
 /// caption
 .pot File
 ///
-.pot File
 
 Here we see the password hashes alongside their cleartext companions.
 
@@ -124,7 +118,6 @@ sudo john --show ~/ITOT_Lab_Files/johntheripper/hashes.txt
 /// caption
 Clearing Cracked Passwords
 ///
-Clearing Cracked Passwords
 
 We’ve now purged John the Ripper’s knowledge of past cracked passwords. You can re-run the lab with the below command if you wish.
 

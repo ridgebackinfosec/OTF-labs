@@ -22,7 +22,6 @@ parsuite --help
 /// caption
 Parsuite Help
 ///
-Parsuite Help
 
 Note all the **32** different modules that Parsuite supports:
 
@@ -85,7 +84,6 @@ parsuite nmap_xml_service_dumper --input-file ~/nmap_lab.xml --output-directory 
 /// caption
 Output
 ///
-Output
 
 Now let’s dive into the Parsuite output a bit.
 
@@ -97,7 +95,6 @@ cd ~/parsuite_output
 /// caption
 Services Organized into Directories
 ///
-Services Organized into Directories
 
 Let’s view the results in the `http` service directory by running the command below.
 
@@ -109,7 +106,6 @@ cat http/tcp_sockets.txt
 /// caption
 Systems and Ports Running a HTTP Service
 ///
-Systems and Ports Running a HTTP Service
 
 As can be seen from the screenshot above, the system IP addresses and ports where HTTP services were detected by `nmap` are now neatly collected. This can help with easy transfer into reports or communications with the customer.
 

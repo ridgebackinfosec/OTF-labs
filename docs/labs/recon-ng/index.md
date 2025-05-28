@@ -19,9 +19,8 @@ recon-ng
 
 ![Initial Launch Screen](./img/Untitled.png){ width="70%" }
 /// caption
-
-///
 Initial Launch Screen
+///
 
 Execute the below command…
 
@@ -33,9 +32,8 @@ This refreshes the list of available Recon-ng modules and adds any newly availab
 
 ![Index Refreshed](./img/Untitled%201.png){ width="70%" }
 /// caption
-
-///
 Index Refreshed
+///
 
 !!! warning "OPTIONAL - The below command may take a while to complete depending on you connection speed. You can skip this command and install only the required module shown in the following command."
 
@@ -56,9 +54,8 @@ Executing the below command will install roughly…
 
 ![Installing All Available Modules](./img/Untitled%202.png){ width="70%" }
 /// caption
-
-///
 Installing All Available Modules
+///
 
 !!! warning "REQUIRED – Install at least the below two modules for this lab."
 
@@ -86,9 +83,8 @@ The terminal prompt should now reflect we are operating within the “google” 
 
 ![New Workspace](./img/Untitled%203.png){ width="70%" }
 /// caption
-
-///
 New Workspace
+///
 
 Execute the below command…
 
@@ -100,9 +96,8 @@ This searches the Recon-ng marketplace for modules related to "hackertarget" and
 
 ![Module Search Functionality](./img/Untitled%204.png){ width="70%" }
 /// caption
-
-///
 Module Search Functionality
+///
 
 Execute the below command…
 
@@ -124,9 +119,8 @@ The `info` command in Recon-ng displays general information about the current wo
 
 ![Module Info](./img/Untitled%205.png){ width="70%" }
 /// caption
-
-///
 Module Info
+///
 
 Note the `default` source for the module is the `domains` database table. We haven’t added any domains to that table yet. So let’s do that next…
 
@@ -142,9 +136,8 @@ You will be prompted to enter a domain and notes for the entry. You can leave th
 
 ![Domain Added](./img/Untitled%206.png){ width="70%" }
 /// caption
-
-///
 Domain Added
+///
 
 Execute the below command…
 
@@ -156,9 +149,8 @@ The `show domains` command in Recon-ng displays a list of all the domains that h
 
 ![Domains Table Content](./img/Untitled%207.png){ width="70%" }
 /// caption
-
-///
 Domains Table Content
+///
 
 Now, let’s run the module and see what we find!
 
@@ -172,9 +164,8 @@ The "run" command in Recon-ng initiates the execution of the module currently se
 
 ![501 New Hosts Discovered](./img/Untitled%208.png){ width="70%" }
 /// caption
-
-///
 501 New Hosts Discovered
+///
 
 501 new hosts were discovered from running this module. These hosts and their IP addresses were automatically added to the `hosts` DB table for further recon.
 
@@ -190,9 +181,8 @@ Note the “/hosts-“ term. That states we want to see modules that use data in
 
 ![Module Search Results](./img/Untitled%209.png){ width="70%" }
 /// caption
-
-///
 Module Search Results
+///
 
 These modules could provide valuable follow-up actions to further recon efforts.
 
@@ -208,9 +198,8 @@ This command searches for all Recon-ng modules that contain "reporting/" in thei
 
 ![Reporting Modules](./img/Untitled%2010.png){ width="70%" }
 /// caption
-
-///
 Reporting Modules
+///
 
 If you didn’t install all the modules earlier, you can install the required reporting module with the below command.
 
@@ -230,9 +219,8 @@ info
 
 ![Module Info](./img/Untitled%2011.png){ width="70%" }
 /// caption
-
-///
 Module Info
+///
 
 These can be set using the `options set [variable_name] [value]` format like below.
 
@@ -246,9 +234,8 @@ options set CUSTOMER Google
 
 ![Set Options](./img/Untitled%2012.png){ width="70%" }
 /// caption
-
-///
 Set Options
+///
 
 Now that all the options are set, let’s create the HTML report by using the `run` command and see what it looks like.
 
@@ -258,9 +245,8 @@ run
 
 ![HTML Report Created](./img/Untitled%2013.png){ width="70%" }
 /// caption
-
-///
 HTML Report Created
+///
 
 Now exit Recon-ng with the below command.
 
@@ -276,9 +262,8 @@ firefox /home/telchar/.recon-ng/workspaces/google/results.html
 
 ![Report Snippet](./img/Untitled%2014.png){ width="70%" }
 /// caption
-
-///
 Report Snippet
+///
 
 ## Challenge
 
@@ -286,6 +271,5 @@ Now that you’ve got the hang of things, create a new workspace, choose a targe
 
 ![Exploitation Modules](./img/Untitled%2015.png){ width="70%" }
 /// caption
-
-///
 Exploitation Modules
+///
