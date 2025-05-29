@@ -18,7 +18,7 @@ The command is searching for directories on a website located at `http://192.168
 !!! warning "This IP Address is likely different from yours so replace it with the one you found in the setup steps."
 
 ```bash
-gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -w ~/ITOT_Lab_Files/gobuster/raft-medium-directories.txt -o ./gobuster_directories_enum.txt
+gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -w ~/OTF-labs/supp/lab_files/gobuster/raft-medium-directories.txt -o ./gobuster_directories_enum.txt
 ```
 
 ![Directory Enumeration](./img/Untitled.png){ width="70%" }
@@ -35,7 +35,7 @@ Finally, the `-o` option specifies the output file for the results, which will b
 Next lets try the below command to search for interesting files on the web server.
 
 ```bash
-gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -w ~/ITOT_Lab_Files/gobuster/raft-medium-files.txt -o ./gobuster_files_enum.txt
+gobuster dir -u http://$META -a "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" -w ~/OTF-labs/supp/lab_files/gobuster/raft-medium-files.txt -o ./gobuster_files_enum.txt
 ```
 
 ![File Enumeration](./img/Untitled%201.png){ width="70%" }
