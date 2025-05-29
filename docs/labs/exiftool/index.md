@@ -6,7 +6,7 @@
     2) Change directories (via the cd command) to this Lab’s directory `~/ITOT_Lab_Files/exiftool/` using the below command.
 
 ```bash
-cd ~/ITOT_Lab_Files/exiftool/
+cd ~/OTF-labs/supp/lab_files/exiftool/
 ```
 
 ## Intro
