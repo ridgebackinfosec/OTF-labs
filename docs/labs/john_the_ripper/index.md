@@ -44,7 +44,7 @@ The `c/s` number represents the approximate password crack attempts per second.
 The following command will try to crack the passwords for the hashes stored in the `hashes.txt` file using the wordlist located at `~/john_lab_passwords.lst`. It will apply the rules specified in the `john` configuration file to generate additional variations of the passwords to increase the chances of cracking them. The `--format=crypt` option indicates that the hashes are in Unix crypt format.
 
 ```bash
-sudo john --wordlist=/home/telchar/ITOT_Lab_Files/johntheripper/john_lab_passwords.lst --rules --format=crypt /home/telchar/ITOT_Lab_Files/johntheripper/hashes.txt
+sudo john --wordlist=/home/telchar/OTF-labs/supp/lab_files/johntheripper/john_lab_passwords.lst --rules --format=crypt /home/telchar/OTF-labs/supp/lab_files/johntheripper/hashes.txt
 ```
 
 In the interest of time and the Lab, the provided wordlist is shorter than a typical attacker would use. It also does include passwords for numerous accounts in the `hashes.txt` file.
@@ -59,7 +59,7 @@ Password Cracking
 One of the most powerful features of John the Ripper is that it will remember all the passwords it has cracked and their related hashes. The below command will show the cracked passwords for the hashes stored in the `hashes.txt` file. If any of the passwords have been successfully cracked by John the Ripper, they will be displayed in the terminal.
 
 ```bash
-sudo john --show ~/ITOT_Lab_Files/johntheripper/hashes.txt
+sudo john --show /home/telchar/OTF-labs/supp/lab_files/johntheripper/hashes.txt
 ```
 
 ![Cracked Hashes](./img/Untitled%203.png){ width="70%" }
@@ -111,7 +111,7 @@ sudo rm /root/.john/john.pot
 Now the `--show` option will not have any results for our hashes.txt file.
 
 ```bash
-sudo john --show ~/ITOT_Lab_Files/johntheripper/hashes.txt
+sudo john --show /home/telchar/OTF-labs/supp/lab_files/johntheripper/hashes.txt
 ```
 
 ![Clearing Cracked Passwords](./img/Untitled%206.png){ width="70%" }
@@ -122,5 +122,5 @@ Clearing Cracked Passwords
 We’ve now purged John the Ripper’s knowledge of past cracked passwords. You can re-run the lab with the below command if you wish.
 
 ```bash
-sudo john --wordlist=~/ITOT_Lab_Files/johntheripper/john_lab_passwords.lst --rules --format=crypt ~/ITOT_Lab_Files/johntheripper/hashes.txt
+sudo john --wordlist=/home/telchar/OTF-labs/supp/lab_files/johntheripper/john_lab_passwords.lst --rules --format=crypt /home/telchar/OTF-labs/supp/lab_files/johntheripper/hashes.txt
 ```
