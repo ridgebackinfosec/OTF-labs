@@ -17,8 +17,7 @@ Additional setup details for each VM (credentials, network config, etc.) will be
 
 First, you will need to download and install VMware on your host machine. Both Workstation Pro (Windows/Linux) and Fusion Pro (Mac) are now FREE!
 
-You can follow the guide in the below blog post’s URL to obtain installation file you need.
-[https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html](https://blogs.vmware.com/workstation/2024/05/vmware-workstation-pro-now-available-free-for-personal-use.html)
+Antisyphon Training has created a helpful "[How to Download and Install VMWare Pro Workstation for Windows and Linux](https://www.youtube.com/watch?v=BpTMEvWOhAM)" video to guide you through process of setting up VMware on your machine.
 
 Be sure to select the “Personal Use” option to avoid needing a paid license.
 
