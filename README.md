@@ -86,6 +86,21 @@ Turn The Forge VM on, login using the creds `telchar:ridgeback`, open a terminal
 ```bash
 git clone https://github.com/ridgebackinfosec/OTF-labs ~/OTF-labs
 cd ~/OTF-labs
+```
+
+**NOTE: If you're taking the _On-Demand_ version of this class, please check the version number of the recordings then perform the below extra command. This will ensure you're using the corresponding release of the labs.**
+
+```bash
+# beginning of extra command
+
+git checkout tags/v1.0.1 # <-- Replace this version number with the corresponding number from the recordinings
+
+# end of extra command
+```
+
+Now, continue on with these final commands...
+
+```bash
 chmod 744 labs-and-tools.sh
 ./labs-and-tools.sh
 ```
